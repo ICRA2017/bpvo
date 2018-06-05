@@ -23,13 +23,14 @@
 #include "bpvo/timer.h"
 #include "bpvo/utils.h"
 #include <opencv2/highgui/highgui.hpp>
+#include <iostream>
 
 //
 // simple example (without the bpvo_utils)
 //
 
 static const char* LEFT_IMAGE_PREFIX =
-"/bpvo/dataset/illumination/fluorescent/left/frame_%05d.png";
+"/bpvo/dataset/illumination/fluorescent/left/frame_%d.png";
 
 /*
 static const char* RIGHT_IMAGE_PREFIX =
@@ -37,7 +38,7 @@ static const char* RIGHT_IMAGE_PREFIX =
 */
 
 static const char* DMAP_PREFIX =
-"/bpvo/dataset/groundtruth/disparity_maps/left/frame_%05d.png";
+"/bpvo/dataset/groundtruth/disparity_maps/left/frame_%d.png";
 
 using namespace bpvo;
 
