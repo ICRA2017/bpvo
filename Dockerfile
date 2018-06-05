@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y \
-	build-essential git wget \
+	build-essential git wget software-properties-common \
 	libopencv-dev libtbb-dev libeigen3-dev \
 	&& rm -rf /var/lib/apt/lists
 
@@ -17,5 +17,9 @@ RUN wget --output-document=boost.tar.bz2 https://sourceforge.net/projects/boost/
 	
 RUN git clone -b reproducible https://github.com/ICRA2017/bpvo.git
 
+RUN apt-get remove -y cmake \
+	&& apt-get update && apt-get install -y cmake3 \
+	&& rm -rf /var/lib/apt/lists
+	
 RUN cd bpvo && mkdir build && cd build \
 	&& cmake -DCMAKE_CXX_COMPILER=g++-4.9 .. && make -j2 VERBOSE=1
