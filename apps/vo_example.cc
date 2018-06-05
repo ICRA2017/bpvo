@@ -29,7 +29,7 @@
 //
 
 static const char* LEFT_IMAGE_PREFIX =
-"/home/halismai/data/NewTsukubaStereoDataset/illumination/fluorescent/left/tsukuba_fluorescent_L_%05d.png";
+"/bpvo/dataset/illumination/fluorescent/left/frame_%05d.png";
 
 /*
 static const char* RIGHT_IMAGE_PREFIX =
@@ -37,7 +37,7 @@ static const char* RIGHT_IMAGE_PREFIX =
 */
 
 static const char* DMAP_PREFIX =
-"/home/halismai/data/NewTsukubaStereoDataset/groundtruth/disparity_maps/left/tsukuba_disparity_L_%05d.png";
+"/bpvo/dataset/groundtruth/disparity_maps/left/frame_%05d.png";
 
 using namespace bpvo;
 
@@ -63,7 +63,7 @@ int main()
 
   double total_time = 0.0f;
   cv::Mat I0, I1, D;
-  for(int i = 1; i < 500; ++i) {
+  for(int i = 1; i < 200; ++i) {
     I0 = cv::imread(Format(LEFT_IMAGE_PREFIX, i), cv::IMREAD_GRAYSCALE);
     if(I0.empty()) {
       Warn("Failed to read image %d\n", i);
