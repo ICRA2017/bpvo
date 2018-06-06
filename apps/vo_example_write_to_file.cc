@@ -12,10 +12,10 @@
 //
 
 static const char* LEFT_IMAGE_PREFIX =
-"/home/halismai/data/NewTsukubaStereoDataset/illumination/fluorescent/left/tsukuba_fluorescent_L_%05d.png";
+	"/bpvo/dataset/illumination/fluorescent/left/frame_%d.png";
 
 static const char* DMAP_PREFIX =
-"/home/halismai/data/NewTsukubaStereoDataset/groundtruth/disparity_maps/left/tsukuba_disparity_L_%05d.png";
+	"/bpvo/dataset/groundtruth/disparity_maps/left/frame_%d.png";
 
 using namespace bpvo;
 
@@ -70,7 +70,7 @@ int main(int argc, char** argv)
 {
   ProgramOptions options;
   options("output,o", "", "output prefix file")
-      ("numframes,n", int(500), "number of frames to process").parse(argc, argv);
+      ("numframes,n", int(200), "number of frames to process").parse(argc, argv);
 
   Matrix33 K; K << 615.0, 0.0, 320.0, 0.0, 615.0, 240.0, 0.0, 0.0, 1.0;
   float b = 0.1;
