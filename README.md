@@ -1,7 +1,7 @@
 # BPVO
 
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/8506/badge.svg)](https://scan.coverity.com/projects/halismai-bpvo)
-[![Build Status](https://api.travis-ci.org/icra2017/bpvo.svg?branch=master)](https://travis-ci.org/icra2017/bpvo)
+[![Build Status](https://api.travis-ci.org/ICRA2017/bpvo.svg?branch=master)](https://travis-ci.org/ICRA2017/bpvo)
 [![Code Health](https://landscape.io/github/halismai/bpvo/master/landscape.svg?style=flat)](https://landscape.io/github/halismai/bpvo/master)
 [![Docker Build Status](https://dockerbuildbadges.quelltext.eu/status.svg?organization=icra2017&repository=bpvo)](https://hub.docker.com/r/icra2017/bpvo/builds/) 
 
