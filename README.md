@@ -213,6 +213,7 @@ root@44b3fad043b5:/# cd bpvo
 root@44b3fad043b5:/bpvo# ./build/bin/vo_example_write_to_file -o result    
 libdc1394 error: Failed to initialize libdc1394
 Frame 199 [109 ms] 33.49 Hzz
+Processed 200 frames @ 33.66 Hz
 root@44b3fad043b5:/bpvo# ls -l result*
 -rw-r--r-- 1 root root 26217 Jun  6 07:12 result.txt
 -rw-r--r-- 1 root root  7412 Jun  6 07:12 result_path.txt
