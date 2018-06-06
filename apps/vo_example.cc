@@ -23,7 +23,6 @@
 #include "bpvo/timer.h"
 #include "bpvo/utils.h"
 #include <opencv2/highgui/highgui.hpp>
-#include <iostream>
 
 //
 // simple example (without the bpvo_utils)
